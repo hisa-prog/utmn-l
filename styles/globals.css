@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes w-fill {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 96.5%;
+  }
+}
+
+.fill-action::after {
+  content: "";
+  animation-name: w-fill;
+  animation-duration: inherit;
+  animation-iteration-count: inherit;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  animation-duration: 16000ms;
+
+  background-color: #50B5C8;
+  width: 0;
+
+
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 1.7%;
+  border-radius: 0 0 16px 16px;
+}

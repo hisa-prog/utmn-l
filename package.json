@@ -1,0 +1,33 @@
+{
+  "name": "init-projects",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "axios": "^0.26.1",
+    "google-spreadsheet": "^3.2.0",
+    "googleapis": "^98.0.0",
+    "next": "12.0.8",
+    "or": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-phone-number-input": "^3.1.47",
+    "yarn": "^1.22.18"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "typescript": "4.5.4"
+  }
+}

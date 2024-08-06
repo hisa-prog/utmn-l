@@ -1,0 +1,138 @@
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme")
+module.exports = {
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        // firaSans: "Fira Sans",
+        // roboto: "Roboto",
+        openSans: "Open Sans",
+      },
+      maxWidth: {
+        '24px': "24px",
+        '30px': "30px",
+        '184px': "184px",
+        '2xs': "262px",
+        '220px': "202px",
+        '4xs': "300px",
+        '343': "343px",
+        mobile: "375px",
+        "6xl": "1280px",
+        "8xl": "1440px",
+      },
+      maxHeight: {
+        '437px': "437px",
+        '366px': "366px",
+        '350px': "350px",
+      },
+      minWidth: {
+        '3.2': '13px',
+        mobile: "375px",
+        "8xl": "1440px",
+      },
+      fontSize: {
+        "40px": ['40px', '44px'],
+        "5xl-l": ['48px', '56px'],
+        "4xl-sm": ['32px', '40px'],
+        "4xl-xs": ['24px', '28px'],
+        "4xl-l": ['36px', '44px'],
+        "base-m": ['16px', '20px'],
+        "xs-m": ['12px', '20px'],
+        "lg-m": ['18px', '24px'],
+        "xl-l": ['20px', '26px'],
+      },
+      colors: {
+        'main-blue': "#5493EF",
+        'main-dark': "#14202C",
+        'sky-blue': "#E8F9FF",
+        "main-blue-dark": "#007aff",
+        "main-dirty-white": "rgba(219, 216, 240, 0.3)",
+        "main-gray": "#F6F7FE",
+        "main-black-text": "#02090F",
+        'border-light-blue': "#97CCD8",
+        'border-light-gray': "#F1F2FD",
+        'button-hover-color1': "#EC9CD8",
+        'button-hover-color2': "#E9C076",
+        'vacancy-blue': "#97CCD8",
+        'vacancy-green': "#A8D897",
+        'vacancy-purple': "#C597D8",
+        'vacancy-pink': "#D897C2",
+        'vacancy-dirty-green': "#80C6A4",
+        'vacancy-dark-blue': "#9897D8",
+        'vacancy-dark-red': "#D89797",
+      },
+      borderRadius: {
+        'lg-l': '10px',
+        '2xl-xl': '20px',
+      },
+      padding: {
+        '4.8': '19px',
+        '6.5': '26px',
+        '8.5': '34px',
+        '9.5': '38px',
+        '11.5': '46px',
+        '13': '52px',
+        '18': '72px',
+        '18.5': '75px',
+        '30': '120px',
+        '33': '132px',
+        '24.5': '98px'
+      },
+      inset: {
+        '37.5': '150px',
+      },
+      margin: {
+        '8.5': '34px',
+        '2.5': '11px',
+        '24.5': '98px',
+        '32.5': '130px',
+      },
+      width: {
+        '48.2': '193px',
+        '4.5': '18px',
+
+      },
+      height: {
+        '48.2': '193px',
+        '4.5': '18px',
+        '3.2': '13px',
+        '24.5': '98px',
+        '21.5': '86px',
+      },
+    },
+    screens: {
+      "mm": "375px",
+      "ml": "425px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "1xl": "1320px",
+      "xxl": "1440px",
+      "2xl": "1536px",
+      "3xl": "1880px",
+      "4xl": "2200px",
+      "5xl": "2500px",
+      ...defaultTheme.screens,
+    },
+    boxShadow: {
+      'white-button': '0px 4px 12px rgba(128, 166, 85, 0.14)',
+      "button-active": "inset 0px 2px 6px rgba(65, 0, 47, 0.15)",
+    },
+    letterSpacing: {
+      main: '.15em',
+    },
+  },
+  variants: {
+    extend: {
+      textDecoration: ['active', 'focus', "hover"],
+      textColor: ['group-hover', 'active', "hover"],
+      fill: ['hover', 'focus', 'active'],
+      backgroundColor: ['group-focus', "hover", 'group-hover', 'active'],
+      boxShadow: ['active', 'hover']
+    },
+  },
+  plugins: [],
+}
