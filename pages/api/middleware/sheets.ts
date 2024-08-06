@@ -1,11 +1,11 @@
 import { google } from "googleapis"
-import key from "../../../client_secret.json"
+// import key from "../../../client_secret.json"
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 const client = new google.auth.JWT (
-    key.client_email,
+    "utmnsheets@feedback-utmn-landing-node.iam.gserviceaccount.com",
     undefined,
-    key.private_key,
+    "-----BEGIN PRIVATE KEY-----\nsecret_key\n-----END PRIVATE KEY-----\n",
     SCOPES
 );
 
